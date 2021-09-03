@@ -11,7 +11,6 @@
 
 .welcome__div,
 .img__div {
-  background-color: #f9f9f9;
   height: 50%;
   width: 100%;
 }
@@ -38,9 +37,8 @@
 }
 
 .btn__continue {
-  width: 559px;
-  height: 56px;
   background-color: #1a61db;
+  padding: 1rem 3rem;
   color: #fff;
   border-radius: 8px;
   font-weight: bold;
@@ -48,6 +46,7 @@
   line-height: 1.6rem;
   outline: none;
   border: none;
+  z-index: 2;
 }
 
 .btn__continue:hover {
@@ -61,6 +60,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  pointer-events: none;
 }
 
 /* Media Query 1080px and Smaller */
@@ -76,8 +76,6 @@
   }
 
   .btn__continue {
-    width: 80%;
-    height: 56px;
     z-index: 5;
   }
 
